@@ -1,5 +1,5 @@
 #jQuery Editable Grid
-jQuery Editable Grid is a lightweight, powerful plugin that allows any valid HTML table to be edited inline in grid format. This plugin is Bootstrap compatible and requires jQuery >= 1.6.
+jQuery Editable Grid is a lightweight, powerful, and easy-to-use plugin that allows any valid HTML table to be edited inline in grid format. This plugin is Bootstrap compatible and requires jQuery >= 1.6.
 
 ##Overview
 This plugin will allow any HTML table to be rendered as an editable grid. By default, this plugin allows editing in the form of simple text boxes, but supports checkboxes and select lists as well. The save event will return a JSON array of dirty rows only. 
