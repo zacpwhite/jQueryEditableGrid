@@ -170,12 +170,12 @@ Events can be captured by setting property inline during object creation or by t
 	$(document).ready(function(){
 		var grid = $('#myTable').editableGrid();
 
-		$('editButton').click(function(){
+		$('#editButton').click(function(){
 			grid.edit();
 			return false;
 		});
 
-		$('cancelButton').click(function(){
+		$('#cancelButton').click(function(){
 			grid.cancel();
 			return false;
 		});
@@ -183,14 +183,14 @@ Events can be captured by setting property inline during object creation or by t
 		//Data can be returned from the save event through callback or inline
 
 		//Inline
-		$('saveButton').click(function(){
+		$('#saveButton').click(function(){
 			var data = grid.save();
 			alert(data);
 			return false;
 		});
 
 		//Callback
-		$('saveButton').click(function(){
+		$('#saveButton').click(function(){
 			grid.save(function(data){
 				alert(data);
 				return false;
