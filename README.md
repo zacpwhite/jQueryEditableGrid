@@ -1,13 +1,13 @@
-#jQuery Editable Grid
+# jQuery Editable Grid
 jQuery Editable Grid is a lightweight, powerful, and easy-to-use plugin that allows any valid HTML table to be edited inline in grid format. This plugin is Bootstrap compatible and requires jQuery >= 1.6.
 
-##Overview
+## Overview
 This plugin will allow any HTML table to be rendered as an editable grid. By default, this plugin allows editing in the form of simple text boxes, but supports checkboxes and select lists as well. The save event will return a JSON array of dirty rows only. 
 
-##Usage
+## Usage
 This plugin relies on data- attributes to enable editing on td elements and only requires a single line of JavaScript to be enabled on a table.
 
-###Basic Example:
+### Basic Example:
 ```html
 <table id='myTable'>
 	<thead>
@@ -33,8 +33,8 @@ This plugin relies on data- attributes to enable editing on td elements and only
 </script>
 ```
 
-##Options
-###data- Options
+## Options
+### data- Options
 **tr's support the following attributes:**
 + **data-key='YOUR_KEY_NAME'** - (Optional) - Set the name of the Primary Key property to be returned from the save event.
 + **data-value='YOUR_KEY_VALUE'** - (Optional) - Set the value of the Primary Key property.
@@ -47,7 +47,7 @@ This plugin relies on data- attributes to enable editing on td elements and only
 + **data-object-type='(text|checkbox|select)'** - (Optional) -Set the editor to be used. Defaults to text if not provided.
 	- If the object-type is set to 'select', the list of options must be provided in the options object that is passed to the library during object creation (See the Select Object Options section and example below).
 
-###Object Creation Options
+### Object Creation Options
 **On object creation, the following properties can be set:**
 + **'save' : function(callback){}** - (Optional) - Capture the data returned from the save event.
 	- Data returned here is in the form of a JSON array
@@ -58,7 +58,7 @@ This plugin relies on data- attributes to enable editing on td elements and only
 + **'disableBootstrapClasses' : (true|false)** - (Optional) - Disables controls from rendering using built-in Bootstrap styles. By default, the plugin utilizes Bootstrap classes
 + **'columns': []** - (Required for Select Columns) - Provide column specific details for object-type='select' columns.
 
-###Select Object Options
+### Select Object Options
 **When using an object-type='select' column, the following properties can be set in the columns option:**
 + **'name' : 'DATA_PROPERTY_NAME'** - (Required) - Set the column name to associate the properties. Typically the same as the data-property attribute.
 + **'values' : [ARRAY]** - (Required) - Set the list of values to build the select list.
@@ -67,7 +67,7 @@ This plugin relies on data- attributes to enable editing on td elements and only
 + **'value' : 'VALUE_PROPERTY_NAME'** - (Optional) - Set the value property of the array to be selected in the select list.
 	- Applies to multi-dimensional arrays only
 
-##Advanced Example
+## Advanced Example
 ```html
 <table id='cars'>
 	<thead>
@@ -121,7 +121,7 @@ This plugin relies on data- attributes to enable editing on td elements and only
 </script>
 ```
 
-##Events
+## Events
 Events can be captured by setting property inline during object creation or by triggering the event directly through variable binding.
 
 ### Inline Event Handling
@@ -143,7 +143,7 @@ Events can be captured by setting property inline during object creation or by t
 </script>
 ```
 
-###Direct Event Triggering
+### Direct Event Triggering
 ```html
 <table id='myTable'>
 	<thead>
